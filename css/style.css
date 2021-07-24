@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+body{
+    background-color: #e5e5e5;
+}
 /*  TOP  */
 .top-bar{
     width: 100%;
@@ -12,6 +15,7 @@
     top: 0px;
     left: 0px;
     z-index: 1;
+    box-shadow: 5px 3px 6px #888888;
 }
 
 .logo{
@@ -23,7 +27,7 @@
     font-weight: 400;
     margin-top: 5px;
 }
-/*  TOP  */
+
 
 
 /*  CONTENT  */
@@ -31,20 +35,78 @@
     margin-top: 100px;
     padding-top: 31px;
     padding-left: 19px;
+    margin-bottom: 98px;
 }
 
 .category-container{
-    height: 260px;
+    height: 265px;
     width: 100%;
     margin-bottom: 27px;
-    background-color: aqua;
+    overflow-x: scroll;
 }
 
 .div-title{
-    font-size: 26px;
-    color: #333333;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-bottom: 17px;
 }
-/*  CONTENT  */
+
+.options{
+    display: flex;
+}
+
+.option{
+    position: relative;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 216px;
+    max-width: 172px;
+    min-width: 172px;
+    background-color: #FFFF;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 9px;
+    padding: 18px 14px 13px 14px;
+    font-size: 16;
+    box-shadow: 0px 0px 10px -4px #0000;
+}
+
+.option-pic{
+    height: 87px;
+    width: 144px;
+    border-radius: 4px;
+}
+
+.check{
+    position: absolute;
+    bottom: 12.78px;
+    right: 12.78px;
+    height: 15,44px;
+    width: 15,44px;
+    display: none;
+
+}
+.option-title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.option-description{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+.selected{
+    box-shadow: inset 0 0 0 #32B72F;
+    border-style: solid;
+    border-color: #32B72F;
+    border-width: 4px;
+    padding: 14px 10px 9px 10px;
+}
 
 
 /*  BOTTOM BAR  */
@@ -60,7 +122,7 @@
     justify-content: center;
 }
 
-.close-order-disabled{
+.close-order{
     Width: 364px;
     Height: 61px;
     font-size: 20px;
@@ -70,8 +132,9 @@
     justify-content: center;
     border-radius: 50px;
     letter-spacing: 1.8%;
+    border: none;
 }
-/*  BOTTOM BAR  */
+
 
 /**  fonts  **/
 .main-font{
@@ -85,4 +148,10 @@
 /** colors **/
 .white{
     color:#FFFF;
+}
+.black{
+    color: #333333;
+}
+.cinza{
+    color: #A6A6A6;
 }
