@@ -122,10 +122,11 @@ body{
     justify-content: center;
 }
 
-.close-order{
+.close-order {
     Width: 364px;
     Height: 61px;
     font-size: 20px;
+    font-weight: 700;
     background-color: #CBCBCB;
     display: flex;
     align-items: center;
@@ -135,6 +136,9 @@ body{
     border: none;
 }
 
+.activate-button{
+    background-color: #32B72F;
+}
 
 /**  fonts  **/
 .main-font{
