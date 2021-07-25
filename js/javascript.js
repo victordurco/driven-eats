@@ -101,20 +101,21 @@ function closeOrder(){
     confirmOrderDisplay(total);
 }
 
-function formatWhatsappMsg(name){
+function formatWhatsappMsg(name, adress){
     let dishName = getSelectedItem("dishes").querySelector(".option-title").innerHTML;
     let drinkName = getSelectedItem("drinks").querySelector(".option-title").innerHTML;
     let dessertName = getSelectedItem("desserts").querySelector(".option-title").innerHTML;
 
 
     let msg = "Olá, gostaria de fazer o pedido:\n - Prato: "+dishName+"\n - Bebida: "+drinkName+"\n - Sobremesa: "+dessertName+"\nTotal: R$ "+calculateTotal();
-    msg = msg+" Nome: "+name;
+    msg = msg+"\nNome: "+name+"\nEndereço: "+adress;
     return msg;
 }
 
 function confirm(){
     let userName = prompt("Seu nome:");
-    let msg = formatWhatsappMsg(userName);
+    let userAdress = prompt("Seu endereço:");
+    let msg = formatWhatsappMsg(userName, userAdress);
     let encodedMsg = encodeURI(msg);
     let uri = "https://wa.me/5514998375261?text=";
     uri = uri+encodedMsg;
